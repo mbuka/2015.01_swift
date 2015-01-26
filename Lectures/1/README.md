@@ -57,7 +57,7 @@ to reimplement both readFile and writeFile methods.
 ### Closures
 
 Clousures are an equivalent to blocks form Objective-C - inline lambdas.
-Objective-C block syntax isn't straightforward: [http://fuckingblocksytax.com](http://fuckingblocksytax.com)
+Objective-C block syntax isn't straightforward: [http://fuckingblocksyntax.com](http://fuckingblocksytax.com)
 Swift is better... but still [http://fuckingswiftblocksyntax.com](http://fuckingswiftblocksyntax.com) may be of some help...
 
 #### Exercise 1 - function that takes a function
@@ -115,6 +115,6 @@ Read about function composition in Swift here: [http://www.objc.io/snippets/2.ht
 Read about currying in Swift here: [http://www.objc.io/snippets/6.html](http://www.objc.io/snippets/6.html)
 
 ### Reference
-[Apple Swift Programming Guided Tour](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
-[Functional Programming in Swift](http://www.objc.io/books/)
-[We ❤ Swift](https://www.weheartswift.com/higher-order-functions-map-filter-reduce-and-more/)
+- [Apple Swift Programming Guided Tour](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
+- [Functional Programming in Swift](http://www.objc.io/books/)
+- [We ❤ Swift](https://www.weheartswift.com/higher-order-functions-map-filter-reduce-and-more/)
