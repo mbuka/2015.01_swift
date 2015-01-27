@@ -25,7 +25,7 @@ It will be our first time adding add a new functionality to the app. We want the
 [Like, Neutral, Like] -> Like
 [Like, Hate, Like, Hate, Hate] -> Hate
 [Like, Like, Like, Neutral, Neutral, Neutral, Like, Neutral, Neutral] -> Neutral
-```swift
+```
 
 - Implement a feature that will present `median` information next to the pie chart (you can use one of the images that are already in the app representing 3 different Votes)
 
@@ -35,7 +35,7 @@ In our previous exercise we have added a couple of tests, unfortunatelly some of
 func plusIsCommutative(x: Int, y: Int) -> Bool {
     return x + y == y + x
 }
-```swift
+```
 
 This function is a QuickCheck `property`. It takes arguments and then using this two numbers we check if `+` is commutative. We don't really care about `x` and `y`. We want our testing framework to test it on as many values as possible.
 
@@ -45,7 +45,7 @@ This function is a QuickCheck `property`. It takes arguments and then using this
 Hint1: to verify property use the following syntax:
 ```swift
 Check(property, "description")
-```swift
+```
 
 Hint2: you'll need to write an extension on `Int` type, that will make this type conform to: `Arbitrary` and `Smaller` protocols defined by QuickCheck.
 
@@ -63,7 +63,7 @@ func voteManagerAccumulatesSingleVotes(vote: Vote) -> Bool {
     
     return equal(vm.votes, [vote], { $0 == $1 })
 }
-```swift
+```
 
 b) Change the property from point a. so it takes an array of votes, we want to test VoteManager on as many possible Vote sequences as possible. 
 
@@ -74,7 +74,7 @@ c) To make a change from b. compile we need to add extend QuickCheck so it suppo
 - implement a new `check` method that takes an array as an argument:
 ```swift
 func check<X: Arbitrary>(message: String, prop: [X] -> Bool) -> (Bool)
-```swift
+```
 
 Hint: create a new `ArbitraryI` struct with two lambdas for retrieving smaller (use the dummy extension) and arbitrary array (a templete method that will produce an array of some random size with arbitrary elements of type T)
 
