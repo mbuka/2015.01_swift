@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF734F041A7966B60093C9F7 /* Numbers+QuickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF734F001A79659E0093C9F7 /* Numbers+QuickCheck.swift */; };
+		AF734F051A7966B60093C9F7 /* Array+QuickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF734F011A79659E0093C9F7 /* Array+QuickCheck.swift */; };
 		AF76CF361A49CF2600287DC1 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1A6561A3E2A9400F5699C /* Vote.swift */; };
 		AF76CF371A49CF2900287DC1 /* VoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1A6541A3E25C200F5699C /* VoteManager.swift */; };
 		AF80005F1A3E4CE9001FB2F1 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = AF80005E1A3E4CE9001FB2F1 /* XYPieChart.m */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF734F001A79659E0093C9F7 /* Numbers+QuickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+QuickCheck.swift"; sourceTree = "<group>"; };
+		AF734F011A79659E0093C9F7 /* Array+QuickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+QuickCheck.swift"; sourceTree = "<group>"; };
 		AF80005C1A3E4CE8001FB2F1 /* Voter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voter-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF80005D1A3E4CE9001FB2F1 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		AF80005E1A3E4CE9001FB2F1 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				AFCE45BE1A78263400D7263F /* QuickCheck.swift */,
 				AFCE45C11A78283600D7263F /* QuickCheckHelpers.swift */,
 				AFCE45C31A7828EF00D7263F /* StringAndCharacter+QuickCheck.swift */,
+				AF734F001A79659E0093C9F7 /* Numbers+QuickCheck.swift */,
+				AF734F011A79659E0093C9F7 /* Array+QuickCheck.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -317,12 +323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF734F051A7966B60093C9F7 /* Array+QuickCheck.swift in Sources */,
 				AFCE45C01A78263E00D7263F /* QuickCheck.swift in Sources */,
 				AF76CF371A49CF2900287DC1 /* VoteManager.swift in Sources */,
 				AFCE45BD1A7825FE00D7263F /* QuickCheckTests.swift in Sources */,
 				AFCE45C41A7828EF00D7263F /* StringAndCharacter+QuickCheck.swift in Sources */,
 				AFCE45C21A78283600D7263F /* QuickCheckHelpers.swift in Sources */,
 				AF76CF361A49CF2600287DC1 /* Vote.swift in Sources */,
+				AF734F041A7966B60093C9F7 /* Numbers+QuickCheck.swift in Sources */,
 				AFCC56691A3E17AB00400DCA /* VoterTests.swift in Sources */,
 				AFCE45BB1A781F8800D7263F /* Helpers.swift in Sources */,
 			);
