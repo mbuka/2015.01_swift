@@ -20,9 +20,12 @@ func check<X: Arbitrary>(message: String, prop: [X] -> Bool) -> (Bool) {
 }
 
 extension Array: Smaller {
-    func smaller() -> [T]? {
-        // TODO
-        return nil
+    func smaller() -> [T]? {        
+        var newArray = Array(dropLast(self))
+        if(newArray.count == 0){
+            return nil
+        }
+        return newArray
     }
     
 }

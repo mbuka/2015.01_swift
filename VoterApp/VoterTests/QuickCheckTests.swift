@@ -49,6 +49,7 @@ class QuickCheckTests: XCTestCase {
     
     func testVoteManagerMedian() {
         Check(voteManagerReturnsNones, "Error in none median")
+        
     }
     
 }
@@ -60,7 +61,35 @@ func plusIsCommutative(x: Int, y: Int) -> Bool {
 
 
 func voteManagerReturnsNones(voteArray: Array<Vote>) -> Bool{
+    let hateCount = voteArray.filter{$0 == Vote.Hate}.count
+    let likeCount = voteArray.filter{$0 == Vote.Like}.count
+    let neutralCount = voteArray.filter{$0 == Vote.Neutral}.count
+    
+    if((hateCount == likeCount && hateCount > neutralCount) ||
+       (hateCount == neutralCount && hateCount > likeCount) ||
+       (neutralCount == likeCount && likeCount > hateCount) ||
+       (hateCount == likeCount && hateCount == neutralCount)){
+        
+        var vm = VoteManager()
+        
+        for vote in voteArray{
+            vm.makeVote(vote)
+        }
+        
+        return vm.median == Vote.None
+    }
+    
     return true
 }
+
+
+
+
+
+
+
+
+
+
 
 
