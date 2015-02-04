@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -77,6 +78,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jZs-lO-518">
                                 <rect key="frame" x="791" y="560" width="134" height="128"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lambda_academy_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VZg-EI-d24">
+                                <rect key="frame" x="46" y="560" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Ym-gf-4rw"/>
+                                    <constraint firstAttribute="width" secondItem="VZg-EI-d24" secondAttribute="height" multiplier="15:8" id="ecq-LD-7jj"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median of votes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsH-3S-7sb">
+                                <rect key="frame" x="791" y="696" width="134" height="13.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,12 +99,17 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NdX-nz-q6P" secondAttribute="bottom" constant="24" id="JHL-l5-YoM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jZs-lO-518" secondAttribute="bottom" constant="80" id="Jga-Hv-uUA"/>
                             <constraint firstAttribute="centerY" secondItem="Vdt-1s-Kip" secondAttribute="centerY" id="Mt0-z1-aP7"/>
+                            <constraint firstItem="OsH-3S-7sb" firstAttribute="top" secondItem="jZs-lO-518" secondAttribute="bottom" constant="8" id="NKK-zu-Vxw"/>
+                            <constraint firstItem="jZs-lO-518" firstAttribute="centerX" secondItem="OsH-3S-7sb" secondAttribute="centerX" id="Vo7-gz-bbw"/>
                             <constraint firstAttribute="centerX" secondItem="NdX-nz-q6P" secondAttribute="centerX" constant="-0.5" id="XxA-nt-EBW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YYv-e3-2oM" secondAttribute="centerX" constant="150" id="ab8-U5-tWH"/>
                             <constraint firstAttribute="centerY" secondItem="YYv-e3-2oM" secondAttribute="centerY" id="bDk-ko-qVf"/>
                             <constraint firstItem="rRl-Vr-sSj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="dpy-xh-P6M"/>
+                            <constraint firstItem="VZg-EI-d24" firstAttribute="centerX" secondItem="rRl-Vr-sSj" secondAttribute="centerX" id="eux-Ts-Lqa"/>
+                            <constraint firstItem="VZg-EI-d24" firstAttribute="centerY" secondItem="NdX-nz-q6P" secondAttribute="centerY" id="f5n-ds-FnD"/>
                             <constraint firstItem="jZs-lO-518" firstAttribute="leading" secondItem="NdX-nz-q6P" secondAttribute="trailing" constant="76" id="jK7-72-21n"/>
                             <constraint firstItem="Vdt-1s-Kip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6t-ad-jkR"/>
+                            <constraint firstItem="jZs-lO-518" firstAttribute="width" secondItem="OsH-3S-7sb" secondAttribute="width" id="qfY-xN-OgN"/>
                             <constraint firstAttribute="centerY" secondItem="rRl-Vr-sSj" secondAttribute="centerY" id="u9n-m3-XB2"/>
                         </constraints>
                     </view>
@@ -104,6 +123,7 @@
                         <outlet property="likeWidthConstraint" destination="Waf-Oj-J9E" id="LEX-ez-uuW"/>
                         <outlet property="loveButton" destination="rRl-Vr-sSj" id="zMI-oC-SXa"/>
                         <outlet property="medianImage" destination="jZs-lO-518" id="qIp-ah-Px1"/>
+                        <outlet property="medianLabel" destination="OsH-3S-7sb" id="wiL-uo-nev"/>
                         <outlet property="neutralButton" destination="Vdt-1s-Kip" id="XJX-01-nn7"/>
                         <outlet property="neutralHeightConstraint" destination="V8z-LI-aTR" id="XJv-ym-Dof"/>
                         <outlet property="neutralWidthConstraint" destination="rXi-zy-Jmz" id="kRV-nv-FT0"/>
@@ -117,6 +137,7 @@
     <resources>
         <image name="crying.png" width="128" height="128"/>
         <image name="donno.png" width="128" height="128"/>
+        <image name="lambda_academy_logo.png" width="500" height="259"/>
         <image name="love.png" width="128" height="128"/>
     </resources>
 </document>
