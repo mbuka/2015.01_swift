@@ -51,11 +51,12 @@ class VoteManager: NSObject {
     var median: Vote {
         var grouppedVotes  = [self.likes(), self.hates(), self.neutrals()]
         grouppedVotes.sort({ $0.count < $1.count })
-        if (grouppedVotes[0].count == 0) {
-            grouppedVotes.removeAtIndex(0)
+        
+        if(grouppedVotes[1].count == grouppedVotes[2].count){
+            return Vote.None
         }
-
-        if let median = grouppedVotes[1].last {
+        
+        if let median = grouppedVotes[2].last {
             return median
         } else {
             return Vote.None
