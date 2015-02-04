@@ -16,6 +16,7 @@ class ViewController: UIViewController, XYPieChartDataSource {
     @IBOutlet weak var loveButton: UIButton!
     @IBOutlet weak var neutralButton: UIButton!
     @IBOutlet weak var hateButton: UIButton!
+    @IBOutlet weak var medianImage: UIImageView!
     
     @IBOutlet weak var likeWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var likeHeightConstraint: NSLayoutConstraint!
@@ -78,6 +79,7 @@ class ViewController: UIViewController, XYPieChartDataSource {
         }()
         
         
+        
         UIView.animateWithDuration(0.2, animations: {
             width.constant*=2;
             height.constant*=2;
@@ -92,6 +94,17 @@ class ViewController: UIViewController, XYPieChartDataSource {
                 btn.layoutIfNeeded()
             })
         })
+        
+        switch(self.vm.median) {
+        case Vote.Like :
+            medianImage.image = UIImage(named: "love.png")
+        case Vote.Neutral :
+            medianImage.image = UIImage(named: "donno.png")
+        case Vote.Hate :
+            medianImage.image = UIImage(named: "crying.png")
+        default :
+            medianImage.image = nil
+        }
     }
     
     // Pie Chart
