@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315044391A82816A00FDCFF9 /* lambda_academy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 315044381A82816A00FDCFF9 /* lambda_academy_logo.png */; };
 		AF734F041A7966B60093C9F7 /* Numbers+QuickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF734F001A79659E0093C9F7 /* Numbers+QuickCheck.swift */; };
 		AF734F051A7966B60093C9F7 /* Array+QuickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF734F011A79659E0093C9F7 /* Array+QuickCheck.swift */; };
 		AF76CF361A49CF2600287DC1 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1A6561A3E2A9400F5699C /* Vote.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		315044381A82816A00FDCFF9 /* lambda_academy_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lambda_academy_logo.png; sourceTree = "<group>"; };
 		AF734F001A79659E0093C9F7 /* Numbers+QuickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+QuickCheck.swift"; sourceTree = "<group>"; };
 		AF734F011A79659E0093C9F7 /* Array+QuickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+QuickCheck.swift"; sourceTree = "<group>"; };
 		AF80005C1A3E4CE8001FB2F1 /* Voter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voter-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		AFCC56721A3E1AE300400DCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				315044381A82816A00FDCFF9 /* lambda_academy_logo.png */,
 				AFCC56731A3E1AFD00400DCA /* Icons */,
 			);
 			name = Resources;
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCC567C1A3E1AFD00400DCA /* sad.png in Resources */,
+				315044391A82816A00FDCFF9 /* lambda_academy_logo.png in Resources */,
 				AFCC56581A3E17AB00400DCA /* Main.storyboard in Resources */,
 				AFCC567D1A3E1AFD00400DCA /* smile.png in Resources */,
 				AFCC565D1A3E17AB00400DCA /* LaunchScreen.xib in Resources */,
