@@ -7,13 +7,3 @@
 //
 
 import Foundation
-
-// for testing purposes only
-extension Array {
-    mutating func addVote(element: T)
-    {
-        if (self.count < 10) {
-            self.append(element)
-        }
-    }
-}

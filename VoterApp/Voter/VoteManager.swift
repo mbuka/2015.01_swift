@@ -22,7 +22,7 @@ class VoteManager: NSObject {
     }
     
     func makeVote(vote: Vote) {
-        self.votes.addVote(vote)
+        self.votes.append(vote)
         
 //        println("Votes: \(self.votes)")
 //        println("Median: \(self.median)")
